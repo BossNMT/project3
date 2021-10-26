@@ -1,0 +1,44 @@
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .container-forums-table-body-forum p {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .container-forums-table-body-forum p {
+        display: none;
+    }
+
+    .container-forums-table-title tr th {
+        padding: 24px 16px;
+        font-size: 16px;
+    }
+
+    .container-forums-table-body tr td {
+        padding: 24px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container-forums-table-body-forum p {
+        display: none;
+    }
+
+    .container-forums-table-title tr th {
+        padding: 24px 16px;
+        font-size: 16px;
+    }
+
+    .container-forums-table-body tr td {
+        padding: 24px;
+    }
+
+    .container-forums-find input {
+        font-size: 16px;
+    }
+
+    .container-forums-table {
+        width: 100%;
+        // overflow-x: auto;
+    }
+}

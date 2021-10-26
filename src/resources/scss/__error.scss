@@ -1,0 +1,54 @@
+.container-content-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        @include font(30px, $title-color, 600, $font-text);
+        margin: 0;
+    }
+
+    p {
+        margin: 28px 0 80px 0;
+        @include font(14px, $text-color, 600, $font-text);
+    }
+
+    &-img {
+        width: 100%;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-find {
+        margin-top: 90px;
+        padding: 20px;
+        border-radius: 2px;
+        border: 1px solid #d6d6d6;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+
+        input {
+            width: 95%;
+            border: none;
+            outline: none;
+            @include font(14px, $text-color, 600, $font-text);
+        }
+
+        i {
+            font-size: 20px;
+            cursor: pointer;
+            color: $text-color;
+
+            &:hover {
+                color: $text-highlight;
+                transition: 0.25s ease;
+            }
+        }
+    }
+}

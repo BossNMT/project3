@@ -1,0 +1,123 @@
+.container-forums-viewsupdate {
+    margin-top: 50px;
+    border-radius: 3px;
+    background-color: #f0f8ff;
+    border: 1px solid #cee1ef;
+
+    h5 {
+        margin: 14px 32px;
+        @include font(13px, $text-color, 400, $font-text);
+    }
+}
+
+.container-forums-table-body-author {
+    h5 {
+        @include font(13px, $text-color, 400, $font-text);
+        margin-bottom: 42px;
+    }
+
+    h3 {
+        margin: 15px 0 0 0;
+        @include font(13px, $text-highlight, 600, $font-text);
+    }
+
+    p {
+        margin-top: 12px;
+        @include font(13px, $text-color, 600, $font-text);
+    }
+}
+
+.container-forums-table-body-postsdetail {
+    p {
+        text-align: right;
+        margin: 0 0 42px 0;
+        @include font(12px, #999999, 400, $font-text);
+    }
+
+    h5 {
+        @include font(14px, $text-color, 400, $font-text);
+        margin: 0 0 40px 0;
+        line-height: 24px;
+
+        span {
+            margin-top: 16px;
+            display: block;
+        }
+    }
+
+    h4 {
+        font-style: italic;
+        line-height: 24px;
+        @include font(14px, $text-color, 600, $font-text);
+    }
+}
+
+.container-forums-message {
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+        margin-left: 32px;
+    }
+
+    &-inputtext {
+        width: 80%;
+        border-radius: 2px;
+        border: 1px solid #d3d3d3;
+
+        &-tool {
+            border-bottom: 1px solid #d3d3d3;
+            background-color: #f6f6f6;
+            display: flex;
+            padding: 8px 0;
+
+            &-font + &-font {
+                border-left: 1px solid #d3d3d3;
+            }
+
+            &-font:first-child {
+                margin-left: 30px;
+            }
+
+            &-font {
+                i {
+                    margin: 0 10px;
+                    color: $text-color;
+
+                    &:hover {
+                        color: $text-highlight;
+                        cursor: pointer;
+                        transition: 0.25s ease;
+                    }
+                }
+            }
+        }
+
+        &-input {
+            outline: none;
+            border: none;
+            padding: 20px;
+            width: 100%;
+        }
+    }
+}
+
+.container-forums-button {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin-top: 30px;
+    padding: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: $text-highlight;
+    @include font(18px, #ffffff, 600, $font-text);
+
+    &:hover {
+        opacity: 0.8;
+        transition: 0.25s ease;
+    }
+}

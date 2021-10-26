@@ -1,0 +1,58 @@
+.slideshow-container {
+    position: relative;
+    margin: auto;
+
+    .mySlides {
+        display: none;
+
+        img {
+            height: 592px;
+            object-fit: cover;
+        }
+    }
+
+    /* thiết kế nút mũi tên*/
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        transition: 0.6s ease;
+        user-select: none;
+    }
+
+    /* thiết kế nút mũi tên next nằm phía bên phải */
+    .next {
+        right: 0;
+    }
+
+    /* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+}
+
+.banner {
+    &-info {
+        margin-top: 21px;
+        
+        h5 {
+            @include font(14px, $text-highlight, 700, $font-title);
+            text-align: center;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 26px;
+            @include font(24px, $title-color, 700, $font-title);
+        }
+
+        p {
+            text-align: center;
+            margin-top: 21px;
+            @include font(16px, $subtitles-color, 400, $font-text);
+        }
+    }
+}

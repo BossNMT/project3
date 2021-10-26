@@ -1,0 +1,88 @@
+.header {
+    margin: 24px 0 60px 0;
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-laguages {
+            font-size: 14px;
+            line-height: 120px;
+            color: $title-color;
+            font-weight: 300;
+            font-family: $font-title;
+            border: 0;
+            outline: none;
+
+            option {
+                font-size: 14px;
+                line-height: 120px;
+                color: $title-color;
+                font-weight: 300;
+                font-family: $font-title;
+                border: none;
+            }
+        }
+
+        &-input {
+            display: flex;
+            align-items: center;
+            border: 1px solid #dadada;
+
+            input {
+                border: none;
+                padding: 3px 10px;
+                outline: none;
+                font-size: 14px;
+                color: $title-color;
+                font-weight: 300;
+                font-family: $font-title;
+            }
+
+            &-btn {
+                border: none;
+                background: none;
+                cursor: pointer;
+
+                &:hover {
+                    color: $text-highlight;
+                    transition: 0.25s ease;
+                }
+            }
+        }
+    }
+
+    &-logo {
+        margin-top: 68px;
+        text-align: center;
+    }
+
+    &-menu {
+        margin-top: 62px;
+
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            list-style: none;
+
+            a {
+                @include font(18px, $title-color, 700, $font-title);
+                text-decoration: none;
+                color: $title-color;
+
+                &:hover {
+                    color: $text-highlight;
+                    transition: 0.25s ease;
+                }
+            }
+
+            &-logo {
+                a {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .container-content-error p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .container-content-error h2 {
+        font-size: 26px;
+    }
+
+    .container-content-error p {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container-content-error h2 {
+        font-size: 26px;
+    }
+
+    .container-content-error p {
+        font-size: 9px;
+    }
+
+    .container-content-error-find {
+        width: 100%;
+    }
+}

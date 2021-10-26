@@ -1,0 +1,29 @@
+@import '__variables.scss';
+@import '__mixins.scss';
+@import '__header.scss';
+@import '__footer.scss';
+@import '__banner.scss';
+@import '__content.scss';
+@import '__portfolio.scss';
+@import '__blog.scss';
+@import '__author.scss';
+@import '__forums.scss';
+@import '__contact.scss';
+@import '__error.scss';
+@import '__responsive.scss';
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    color: $title-color;
+    font-weight: 700;
+    font-family: $font-title;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+

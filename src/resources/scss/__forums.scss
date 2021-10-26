@@ -1,0 +1,132 @@
+.container-forums {
+    margin-top: 110px;
+
+    &-title {
+        text-align: center;
+        @include font(24px, $text-highlight, 600, $font-text);
+    }
+
+    &-find {
+        margin-top: 40px;
+        border: 1px solid #cccccc;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        input {
+            width: 90%;
+            outline: none;
+            border: none;
+            @include font(18px, #cccccc, 400, $font-text);
+        }
+
+        i {
+            color: $text-highlight;
+            font-size: 28px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.6;
+                transition: 0.25s ease;
+            }
+        }
+    }
+
+    &-table {
+        margin-top: 16px;
+        box-sizing: border-box;
+        border-top: 3px solid $text-highlight;
+        border-bottom: 3px solid $text-highlight;
+
+        &-title {
+            background-color: #f6f6f6;
+
+            tr {
+                th {
+                    padding: 24px 32px;
+                    @include font(18px, $title-color, 600, $font-text);
+                }
+            }
+        }
+
+        &-body {
+            tr {
+                td {
+                    padding: 24px 32px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.6);
+                    transition: 0.15s ease;
+                }
+            }
+
+            &-forum {
+                h3 {
+                    margin: 0;
+                    @include font(18px, $title-color, 600, $font-text);
+                }
+
+                p {
+                    margin-top: 20px;
+                    @include font(14px, $text-color, 600, $font-text);
+                    font-style: italic;
+                }
+            }
+
+            &-topics {
+                text-align: center;
+                @include font(18px, $title-color, 600, $font-text);
+            }
+
+            &-posts {
+                @include font(18px, $title-color, 600, $font-text);
+                text-align: center;
+            }
+            
+            &-fresh {
+                h4 {
+                    @include font(14px, #333333, 600, $font-text);
+                    text-align: center;
+                }
+
+                &-admin {
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        color: #333333;
+                        margin-right: 4px;
+                    }
+
+                    p {
+                        margin: 0;
+                        @include font(14px, #333333, 600, $font-text);
+                    }
+                }
+            }
+        }
+    }
+
+    &-views {
+        h5 {
+            margin: 26px 32px;
+            @include font(13px, $text-color, 400, $font-text);
+        }
+    }
+
+    &-clicklogin {
+        border-radius: 3px;
+        background-color: #ffffe0;
+        border: 1px solid #e6db55;
+
+        h5 {
+            margin: 12px 32px;
+            @include font(13px, $text-color, 400, $font-text);
+        }
+    }
+}
+
+@import '__forums-detail.scss';
